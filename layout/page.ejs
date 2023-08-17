@@ -33,7 +33,9 @@
               <%- list_categories() %>
             </div>
           </div>
-        <% } else { %>
+        <% } else if(page.type==='flinks'){%>
+          <%- include("flinks"); %>
+          <%}else { %>
           <%- page.content %>
         <% } %>
   </div>

@@ -1,0 +1,36 @@
+<!--this is flinks-->
+<% let links = site.data.link.link_list %>
+<div class="flink-div">
+    <% links.forEach(function(item){ %>
+
+        <div class="flink-inner">
+            <a class="flink-src" href="<%= item.link %>">
+            <img src="<%= item.avatar %>" class="flink-avatar" alt="#">
+            <div class="flink-name"><%= item.name %></div>
+            <div class="flink-descr"><%= item.descr %></div>
+            </a>
+        </div>
+
+    <% }); %>
+</div>
+
+<style>
+    * {
+        text-decoration: none;
+    }
+
+    .flink-div {
+        display: grid;
+        grid-template-columns: repeat(4, 100px);
+        grid-column-gap: 20px;
+        grid-row-gap: 20px;
+    }
+    .flink-inner {
+    }
+
+    .flink-avatar {
+        width: 50px;
+    }
+</style>
+
+
