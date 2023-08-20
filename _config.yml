@@ -19,6 +19,10 @@ nav:
   articles: /archives/
   flinks:  /flinks/
 
+# 网站介绍
+desc:
+  #avatar: xxx/xxx.jpg
+  avatar: /images/logo.png
 
 # Links to your social media accounts.
 # The 'icon' keys should correspond to Fontawesome icon names

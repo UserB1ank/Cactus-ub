@@ -1,2 +1,19 @@
 <!--this is about-->
-<div>你好啊</div>
+<%# 处理变量 %>
+<% var author=config.author===""? "":config.author %>
+<% var avatar=theme.desc.avatar===""? theme.favicon.android.url:theme.desc.avatar %>
+<div class="about-div">
+    <h1><%= author%></h1>
+    <!-- <h1><%= theme.favicon.android.url %></h1> -->
+    <!-- <img src="<%= theme.favicon.android.url %>"> -->
+    <img class="avatar" src="<%= avatar %>">
+    <p>计算机科学爱好者，喜欢各种技术。</p>
+    <p>由于喜欢各种技术，所以什么都知道点。</p>
+    <p>但是什么都不精(悲)</p>
+</div>
+
+<style>
+.avatar{
+    width: 100px;
+}
+</style>
